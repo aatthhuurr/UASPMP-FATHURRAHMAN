@@ -21,15 +21,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // Menghilangkan tanda pita merah "DEBUG" di pojok kanan atas biar tampilan rapi
-      debugShowCheckedModeBanner: false, 
+      debugShowCheckedModeBanner: false,
       title: 'Aplikasi Keuangan UAS',
       // Mengatur tema warna dasar aplikasi (pakai warna hijau/teal khas keuangan)
       theme: ThemeData(
         primarySwatch: Colors.teal,
-        useMaterial3: true, // Menggunakan desain Material 3 yang modern dan rapi
+        useMaterial3:
+            true, // Menggunakan desain Material 3 yang modern dan rapi
       ),
       // Halaman pertama yang otomatis dibuka saat aplikasi start adalah SplashPage
-      home: const SplashPage(), 
+      home: const SplashPage(),
     );
   }
 }
