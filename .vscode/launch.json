@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name"    : "Aplikasi UAS Keuangan",
+      "request" : "launch",
+      "type"    : "dart",
+      "program" : "lib/main.dart",
+      "args"    : [
+        "-d",
+        "chrome",
+        "--web-port=5000"
+      ]
+    }
+  ]
+}
