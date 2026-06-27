@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-// Kita impor DatabaseService yang sudah kita buat di langkah 4 kemarin
 import 'services/database_service.dart';
-// Kita impor SplashPage yang nanti akan kita buat setelah ini
 import 'pages/splash_page.dart';
 
 void main() async {
@@ -9,7 +7,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // 2. Menyalakan database Hive sebelum aplikasi menampilkan layar
-  // Dosen sering tanya: Ini fungsi async-await agar aplikasi menunggu database siap dulu
+  // Ini fungsi async-await agar aplikasi menunggu database siap dulu
   await DatabaseService.initDatabase();
 
   // 3. Menjalankan aplikasi utama
@@ -25,7 +23,7 @@ class MyApp extends StatelessWidget {
       // Menghilangkan tanda pita merah "DEBUG" di pojok kanan atas biar tampilan rapi
       debugShowCheckedModeBanner: false, 
       title: 'Aplikasi Keuangan UAS',
-      // Mengatur tema warna dasar aplikasi (kita pakai warna hijau/teal khas keuangan)
+      // Mengatur tema warna dasar aplikasi (pakai warna hijau/teal khas keuangan)
       theme: ThemeData(
         primarySwatch: Colors.teal,
         useMaterial3: true, // Menggunakan desain Material 3 yang modern dan rapi
